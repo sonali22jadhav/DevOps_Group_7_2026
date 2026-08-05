@@ -1,0 +1,55 @@
+Started by user sonali
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/Jenkins-Assign-2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[git] $ sh -e /root/.jenkins/tools/git/hudson5029097128867692859.sh
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+[git] $ sh -e /root/.jenkins/tools/git/hudson18170600119735662309.sh
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+The recommended git tool is: NONE
+using credential git
+Cloning the remote Git repository
+Cloning repository https://github.com/sonali22jadhav/DevOps_Group_7_2026.git
+ > /usr/bin/git init /root/.jenkins/workspace/Jenkins-Assign-2 # timeout=10
+Fetching upstream changes from https://github.com/sonali22jadhav/DevOps_Group_7_2026.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+using GIT_ASKPASS to set credentials git
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/sonali22jadhav/DevOps_Group_7_2026.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/sonali22jadhav/DevOps_Group_7_2026.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > /usr/bin/git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision c019dbe440024049a38a08a48c8befc0923045de (origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f c019dbe440024049a38a08a48c8befc0923045de # timeout=10
+Commit message: "Update index.html"
+ > /usr/bin/git rev-list --no-walk e2dd805d733b9c3f2cb68654e125d883ee88d6fc # timeout=10
+[Jenkins-Assign-2] $ /bin/bash /mnt/servers/apache-tomcat-10.1.57/temp/jenkins12554351594211097958.sh
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apache2 is already the newest version (2.4.58-1ubuntu8.15).
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+Synchronizing state of apache2.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable apache2
+Finished: SUCCESS

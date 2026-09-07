@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             agent {
-                label 'Built-In'
+                label 'a'
             }
             steps {
                 echo "Running Build on Node Built-in"

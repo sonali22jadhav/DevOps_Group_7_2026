@@ -5,10 +5,10 @@ pipeline {
 
         stage('Build') {
             agent {
-                label 'node-a'
+                label 'Built-in'
             }
             steps {
-                echo "Running Build on Node A"
+                echo "Running Build on Node Built-in"
                 sh 'hostname'
                 sh 'sleep 10'
             }
@@ -16,10 +16,10 @@ pipeline {
 
         stage('Unit Test') {
             agent {
-                label 'node-b'
+                label 'node-a'
             }
             steps {
-                echo "Running Unit Test on Node B"
+                echo "Running Unit Test on Node A"
                 sh 'hostname'
                 sh 'sleep 10'
             }
@@ -30,10 +30,10 @@ pipeline {
 
                 stage('Integration Test') {
                     agent {
-                        label 'node-c'
+                        label 'node-b'
                     }
                     steps {
-                        echo "Running Integration Test on Node C"
+                        echo "Running Integration Test on Node B"
                         sh 'hostname'
                         sh 'sleep 20'
                     }
@@ -41,10 +41,10 @@ pipeline {
 
                 stage('Security Scan') {
                     agent {
-                        label 'node-d'
+                        label 'node-a'
                     }
                     steps {
-                        echo "Running Security Scan on Node D"
+                        echo "Running Security Scan on Node A"
                         sh 'hostname'
                         sh 'sleep 20'
                     }
@@ -54,7 +54,7 @@ pipeline {
 
         stage('Deploy') {
             agent {
-                label 'node-e'
+                label 'node-b'
             }
             steps {
                 echo "Deploying after all parallel stages complete"
